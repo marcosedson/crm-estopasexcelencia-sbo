@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "./auth-context";
+import { useAuth } from "../contexts/auth-context";
 
-const LoginPage: React.FC = () => {
+const Login: React.FC = () => {
     const [username, setUsername] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const [error, setError] = useState<string | null>(null);
@@ -16,9 +16,10 @@ const LoginPage: React.FC = () => {
 
         if (success) {
             navigate("/producao");
-        } else {
-            setError("Usuário ou senha inválidos");
+
+            return
         }
+            setError("Usuário ou senha inválidos");
     };
 
     return (
@@ -48,4 +49,4 @@ const LoginPage: React.FC = () => {
     );
 };
 
-export default LoginPage;
+export default Login;
