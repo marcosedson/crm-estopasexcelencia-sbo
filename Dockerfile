@@ -28,7 +28,7 @@ RUN rm -rf /usr/local/apache2/htdocs/*
 # Copiar os arquivos construídos pelo build para o diretório padrão do Apache
 COPY --from=build /app/build /usr/local/apache2/htdocs/
 
-#COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+#COPY ./.htaccess /usr/local/apache2/conf/.htaccess
 
 # Expor porta 80 para servir o site estático
 EXPOSE 8087

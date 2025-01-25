@@ -8,7 +8,6 @@ import Login from "./pages/Login";
 
 const App: React.FC = () => {
     return (
-        // Adicionando o basename '/controle' ao BrowserRouter
         <Router basename="/controle">
             <div className="container mx-auto p-4">
                 <Routes>
