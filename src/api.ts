@@ -1,6 +1,6 @@
 import { Checklist, Manutencao, Producao } from "./types";
 
-const API_BASE_URL = "http://185.208.206.208:8088"; // Corrigido para incluir o protocolo HTTP
+const API_BASE_URL = "http://localhost:8088"; // Corrigido para incluir o protocolo HTTP
 
 export const createProducao = async (producao: Producao) => {
     const response = await fetch(`${API_BASE_URL}/api/producao`, {

@@ -271,9 +271,9 @@ const ProducaoPage: React.FC = () => {
                                         type="number"
                                         value={produto.fd20kg}
                                         onChange={(e) =>
-                                            handleProdutoChange(index, "fd30kg", parseInt(e.target.value) || 0)
+                                            handleProdutoChange(index, "fd20kg", parseInt(e.target.value) || 0)
                                         }
-                                        placeholder="Fardos 30kg"
+                                        placeholder="Fardos 20kg"
                                         className="form-control"
                                     />
                                 </div>
