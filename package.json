@@ -1,6 +1,7 @@
 {
-  "name": "projeto-front-fabrica",
+  "name": "crm-estopasexcelencia-sbo",
   "version": "1.0.0",
+  "homepage": "/controle",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
