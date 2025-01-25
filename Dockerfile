@@ -31,7 +31,7 @@ COPY --from=build /app/build /usr/local/apache2/htdocs/
 #COPY ./.htaccess /usr/local/apache2/conf/.htaccess
 
 # Expor porta 80 para servir o site estático
-EXPOSE 8087
+EXPOSE 80
 
 # Comando para inicializar o Apache
 CMD ["httpd-foreground"]
