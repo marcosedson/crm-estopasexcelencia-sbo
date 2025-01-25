@@ -8,17 +8,18 @@ import Login from "./pages/Login";
 
 const App: React.FC = () => {
     return (
-            <Router>
-                <div className="container mx-auto p-4">
-                    <Routes>
-                        <Route path="/" element={<Introducao />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/producao" element={<Producao />} />
-                        <Route path="/manutencoes" element={<Manutencoes />} />
-                        <Route path="/checklist" element={<Checklist />} />
-                    </Routes>
-                </div>
-            </Router>
+        // Adicionando o basename '/controle' ao BrowserRouter
+        <Router basename="/controle">
+            <div className="container mx-auto p-4">
+                <Routes>
+                    <Route path="/" element={<Introducao />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/producao" element={<Producao />} />
+                    <Route path="/manutencoes" element={<Manutencoes />} />
+                    <Route path="/checklist" element={<Checklist />} />
+                </Routes>
+            </div>
+        </Router>
     );
 };
 
